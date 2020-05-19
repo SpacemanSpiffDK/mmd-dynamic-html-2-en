@@ -66,3 +66,24 @@ body {
 h1, p {
 	margin-bottom: var(--frp-density-m);
 }
+
+
+/* animate on viewport entry */
+
+.vp-animate {
+	opacity: 0;
+	transition: all .3s ease-out;
+	transform: translateY(20px);
+}
+
+.vp-animate.in-view {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.vp-animate-delay-1 { transition-delay: .5s }
+.vp-animate-delay-2 { transition-delay: .75s }
+.vp-animate-delay-3 { transition-delay: 1s }
+.vp-animate-delay-4 { transition-delay: 1.25s }
+
+
